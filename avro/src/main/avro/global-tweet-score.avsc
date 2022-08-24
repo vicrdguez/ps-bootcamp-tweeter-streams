@@ -1,0 +1,10 @@
+{"type":"record",
+  "name":"GlobalTwitterScore",
+  "namespace":"io.confluent.bootcamp",
+  "fields": [
+    {"name": "timeOfScore", "type": { "type":"long", "logicalType": "timestamp-millis" }},
+    {"name": "totalTweets", "type": "long" },
+    {"name": "totalScore", "type": "double" },
+    {"name": "totalAvgScore", "type": "double"}
+  ]
+}

@@ -1,0 +1,8 @@
+.java-version
+.idea
+*/.java-version
+services/*/.java-version
+*/.idea
+*/*/.idea
+*/target/
+*/*/target/

@@ -1,0 +1,58 @@
+{
+  "type": "record",
+  "name": "ScoredTweet",
+  "namespace": "io.confluent.bootcamp",
+  "fields": [
+    {
+      "name": "CreatedAt",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "connect.doc": "Return the created_at",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "Id",
+      "type": "long"
+    },
+    {
+      "name": "Text",
+      "type": "string"
+    },
+    {
+      "name": "userId",
+      "type": "long"
+    },
+    {
+      "name": "userName",
+      "type": "string"
+    },
+    {
+      "name": "userFollowersCount",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "connect.doc": "Returns the number of followers"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "tweetScore",
+      "type": [
+        "null",
+        {
+          "type": "double"
+        }
+      ],
+      "default": null
+    }
+  ]
+}
